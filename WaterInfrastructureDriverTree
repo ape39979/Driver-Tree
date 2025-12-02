@@ -1,0 +1,71 @@
+digraph WaterInfrastructureDriverTree {
+	newrank=true rankdir=TB
+	node [fontname=Arial fontsize=12 margin=0.2 shape=box style="filled, rounded"]
+	Goal [label="GOAL: Resolve Water Loss &
+Harden Infrastructure" fillcolor="#2C3E50" fontcolor="#ffffff"]
+	D1 [label="Driver 1:
+Restore Physical
+Water Supply" fillcolor="#34495E" fontcolor="#ffffff"]
+	D2 [label="Driver 2:
+Mitigate Operational
+Risk" fillcolor="#34495E" fontcolor="#ffffff"]
+	D3 [label="Driver 3:
+Future-Proof
+Resiliency" fillcolor="#34495E" fontcolor="#ffffff"]
+	Goal -> D1
+	Goal -> D2
+	Goal -> D3
+	D1_A [label="Utility Bypass &
+Flow Restoration" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D1_B [label="Potable Water
+Stockpiling" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D2_A [label="Site Safety &
+Containment" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D2_B [label="Community
+Continuity" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D3_A [label="Asset Renewal" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D3_B [label="Organizational
+Readiness" fillcolor="#5D6D7E" fontcolor="#ffffff"]
+	D1 -> D1_A
+	D1 -> D1_B
+	D2 -> D2_A
+	D2 -> D2_B
+	D3 -> D3_A
+	D3 -> D3_B
+	L1 [label="Utility Coordination
+(PWD)" fillcolor="#E74C3C" fontcolor="#ffffff"]
+	L2 [label="Install Insertion
+Valves" fillcolor="#EAEDED" fontcolor="#333333"]
+	D1_A -> L1
+	D1_A -> L2
+	L3 [label="NEXCOM Inventory
+(27k+ Units)" fillcolor="#EAEDED" fontcolor="#333333"]
+	L4 [label="SVP Coordination
+(12k+ Units)" fillcolor="#EAEDED" fontcolor="#333333"]
+	D1_B -> L3
+	D1_B -> L4
+	L5 [label="Trenching &
+Excavation" fillcolor="#EAEDED" fontcolor="#333333"]
+	L6 [label="Pedestrian
+Fencing" fillcolor="#EAEDED" fontcolor="#333333"]
+	D2_A -> L5
+	D2_A -> L6
+	L7 [label="Medical/School
+prioritization" fillcolor="#EAEDED" fontcolor="#333333"]
+	L8 [label="Housing Distribution
+Points" fillcolor="#EAEDED" fontcolor="#333333"]
+	D2_B -> L7
+	D2_B -> L8
+	L9 [label="Separate System
+Pipeline" fillcolor="#EAEDED" fontcolor="#333333"]
+	L10 [label="Pipe/Valve
+Renewal Plan" fillcolor="#EAEDED" fontcolor="#333333"]
+	L12 [label="Utility
+Mapping" fillcolor="#EAEDED" fontcolor="#333333"]
+	D3_A -> L9
+	D3_A -> L10
+	D3_A -> L12
+	L11 [label="Contingency
+Drills" fillcolor="#EAEDED" fontcolor="#333333"]
+	D3_B -> L11
+}
